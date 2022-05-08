@@ -19,7 +19,7 @@ def play_alarm_sound_function():
 
 def send_mail_function():
     # defined function to send mail post fire detection using threading
-    recipientmail = "201b052@juetguna.in" # recipients mail
+    recipientmail = # recipients mail
     recipientmail = recipientmail.lower() # To lower case mail
     
     try:
@@ -27,9 +27,9 @@ def send_mail_function():
         server.ehlo()
         server.starttls()
         # Senders mail ID and password
-        server.login("anshikasoni909090@gmail.com", 'anshika@9889soni') 
+        server.login("sender's mail", Password) 
         # recipients mail with mail message
-        server.sendmail('201b052@juetguna.in', recipientmail, "Warning fire accident has been reported") 
+        server.sendmail('recipient mail', recipientmail, "Warning fire accident has been reported") 
         print("Alert mail sent sucesfully to {}".format(recipientmail))
 
         server.close()
